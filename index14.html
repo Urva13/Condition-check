@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+Condition
+</title>
+</head>
+<body>
+<img src = "E:\Urva\mercsedes1.jpg" width = "100%" id = "pic">
+<button id = "btn" onclick = "stp()">Hide</button>
+<script>
+function stp()
+{
+	var Picture = document.getElementById("pic");
+	var button = document.getElementById("btn");
+	var btn_txt = button.innerHTML;
+	
+	if(btn_txt == "Show")
+	{
+		Picture.style.display = "block";
+		button.innerHTML = "Hide";
+	}
+	else
+	{
+		Picture.style.display = "none";
+		button.innerHTML = "Show";
+	}
+}
+</script>
+</body>
+</html>
